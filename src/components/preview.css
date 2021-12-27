@@ -9,6 +9,23 @@
   width: 100%;
 }
 
+.preview-error {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  top: 0px;
+  color: red;
+  font-family: serif;
+  line-height: normal;
+  font-size: 16px;
+}
+
+.preview-error h4 {
+  font-weight: 700;
+  margin-top: 21.28px;
+  margin-bottom: 21.28px;
+}
+
 .react-draggable-transparent-selection .preview-wrapper::after {
   content: '';
   position: absolute;
