@@ -1,24 +1,24 @@
 import './code-editor.css';
-// import './syntax.css';
+import './syntax.css';
 import MonacoEditor, { OnMount } from '@monaco-editor/react';
 import { FC, useRef } from 'react';
 import prettier from 'prettier';
 import parser from 'prettier/parser-babel';
-import codeShift from 'jscodeshift';
-import Highlighter from 'monaco-jsx-highlighter';
-import { parse } from '@babel/parser';
-import traverse from '@babel/traverse';
+// import codeShift from 'jscodeshift';
+// import Highlighter from 'monaco-jsx-highlighter';
+// import { parse } from '@babel/parser';
+// import traverse from '@babel/traverse';
 
 interface CodeEditorProps {
   initialValue: string;
   onChange(value: string | undefined): void;
 }
 
-const babelParse = (code: any) =>
-  parse(code, {
-    sourceType: 'module',
-    plugins: ['jsx']
-  });
+// const babelParse = (code: any) =>
+//   parse(code, {
+//     sourceType: 'module',
+//     plugins: ['jsx']
+//   });
 
 const CodeEditor: FC<CodeEditorProps> = ({ initialValue, onChange }) => {
   const editorRef = useRef<any>();
